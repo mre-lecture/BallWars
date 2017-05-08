@@ -81,5 +81,11 @@ namespace VRStandardAssets.Menu
             // Load the level.
             SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
         }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
+        }
+        
     }
 }
