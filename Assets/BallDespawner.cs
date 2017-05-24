@@ -6,11 +6,10 @@ public class BallDespawner : MonoBehaviour {
 
     public float DespawnTime = 7.0f;
 
-	// Use this for initialization
-	void Start () {
-
+    public void StartDestroyTimer()
+    {
         Invoke("DestroyGameObject", DespawnTime);
-	}
+    }
 	
     public void DestroyGameObject()
     {
