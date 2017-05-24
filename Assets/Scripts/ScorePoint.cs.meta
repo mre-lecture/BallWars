@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: a80b3bc9038f1cc4eb2be500da6689af
-timeCreated: 1495552015
+guid: 951b39fa5bdecf9418884a4b5d25103d
+timeCreated: 1495546277
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences:
-  - goalBall: {fileID: 100000, guid: 74d4eccc2eef05b458920e28157054f5, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

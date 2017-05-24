@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ed383888a86412e498af688a7c0f6511
-timeCreated: 1495466309
+guid: d4c2d2b09d38eaf4b9ba4efb4fd430f8
+timeCreated: 1495473570
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: tennisball
+    4300000: scoreTable
   materials:
     importMaterials: 1
     materialName: 0

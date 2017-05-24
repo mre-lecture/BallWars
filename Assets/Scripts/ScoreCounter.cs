@@ -8,7 +8,6 @@ public class ScoreCounter : MonoBehaviour {
 
 	private int pointsPlayer_two = 0;
 
-
 	public int GetPointsOfPlayerOne(){
 		return pointsPlayer_one;
 	}
@@ -25,5 +24,4 @@ public class ScoreCounter : MonoBehaviour {
 	public void increasePointsPlayerTwo(){
 		pointsPlayer_two++;
 	}
-
 }
