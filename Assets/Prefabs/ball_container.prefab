@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae6802eafe243a49bb189f8c0fdb3d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToSpawn: {fileID: 1625027904140682, guid: a13867becbfbcbc47af89f0e4332ffd9,
+  ObjectToSpawn: {fileID: 1798439175301960, guid: a5bc571382c3759499507ab34172397c,
     type: 2}
   SpawnStartDelay: 1
   SpawnDelayBetween: 1
