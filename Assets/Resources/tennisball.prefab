@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa9e964b08997f48a7197ad7fcea1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DespawnTime: 7
+  DespawnTime: 8
 --- !u!135 &135853484904357584
 SphereCollider:
   m_ObjectHideFlags: 1
