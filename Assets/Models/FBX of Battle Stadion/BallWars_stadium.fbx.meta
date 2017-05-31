@@ -1,82 +1,72 @@
 fileFormatVersion: 2
-guid: 7408438e63c775b44910255ad5bf8f42
-timeCreated: 1495471661
+guid: c85c7ad3cf7ddb742987ba64bbdb653a
+timeCreated: 1496168204
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: arena
     100002: //RootNode
-    100004: Cable
-    100006: chair_audience_proxy
-    100008: chair_audience_proxy.001
-    100010: chair_audience_proxy.002
-    100012: chair_audience_proxy.003
-    100014: chair_audience_proxy.004
-    100016: chair_audience_proxy.005
-    100018: chair_proxy
-    100020: chair_proxy.001
-    100022: chair_proxy.002
-    100024: chair_proxy.003
-    100026: Cylinder
-    100028: entrance
-    100030: frontWall
-    100032: frontWall_2
-    100034: Import Objects
-    100036: littlestair
-    100038: littlestair.001
-    100040: Mirror Object
-    100042: playFieldArea
-    100044: ScoreTable
-    100046: scoreTable_proxy
-    100048: scoreTable_proxy.2
-    100050: sidewall
-    100052: stair
-    100054: stair.001
-    100056: stair.002
-    100058: stair.003
-    100060: stair.004
-    100062: stair.005
-    100064: Stairs
-    100066: Sun
-    100068: Sun.001
-    100070: Walls
+    100004: chair_audience_proxy
+    100006: chair_audience_proxy.001
+    100008: chair_audience_proxy.002
+    100010: chair_audience_proxy.003
+    100012: chair_audience_proxy.004
+    100014: chair_audience_proxy.005
+    100016: chair_proxy
+    100018: chair_proxy.001
+    100020: chair_proxy.002
+    100022: chair_proxy.003
+    100024: entrance
+    100026: frontWall
+    100028: frontWall_2
+    100030: Import Objects
+    100032: littlestair
+    100034: littlestair.001
+    100036: Mirror Object
+    100038: playFieldArea
+    100040: sidewall
+    100042: stair
+    100044: stair.001
+    100046: stair.002
+    100048: stair.003
+    100050: stair.004
+    100052: stair.005
+    100054: Stairs
+    100056: Sun
+    100058: Sun.001
+    100060: Walls
     400000: arena
     400002: //RootNode
-    400004: Cable
-    400006: chair_audience_proxy
-    400008: chair_audience_proxy.001
-    400010: chair_audience_proxy.002
-    400012: chair_audience_proxy.003
-    400014: chair_audience_proxy.004
-    400016: chair_audience_proxy.005
-    400018: chair_proxy
-    400020: chair_proxy.001
-    400022: chair_proxy.002
-    400024: chair_proxy.003
-    400026: Cylinder
-    400028: entrance
-    400030: frontWall
-    400032: frontWall_2
-    400034: Import Objects
-    400036: littlestair
-    400038: littlestair.001
-    400040: Mirror Object
-    400042: playFieldArea
-    400044: ScoreTable
-    400046: scoreTable_proxy
-    400048: scoreTable_proxy.2
-    400050: sidewall
-    400052: stair
-    400054: stair.001
-    400056: stair.002
-    400058: stair.003
-    400060: stair.004
-    400062: stair.005
-    400064: Stairs
-    400066: Sun
-    400068: Sun.001
-    400070: Walls
+    400004: chair_audience_proxy
+    400006: chair_audience_proxy.001
+    400008: chair_audience_proxy.002
+    400010: chair_audience_proxy.003
+    400012: chair_audience_proxy.004
+    400014: chair_audience_proxy.005
+    400016: chair_proxy
+    400018: chair_proxy.001
+    400020: chair_proxy.002
+    400022: chair_proxy.003
+    400024: entrance
+    400026: frontWall
+    400028: frontWall_2
+    400030: Import Objects
+    400032: littlestair
+    400034: littlestair.001
+    400036: Mirror Object
+    400038: playFieldArea
+    400040: sidewall
+    400042: stair
+    400044: stair.001
+    400046: stair.002
+    400048: stair.003
+    400050: stair.004
+    400052: stair.005
+    400054: Stairs
+    400056: Sun
+    400058: Sun.001
+    400060: Walls
     2300000: arena
     2300002: chair_audience_proxy
     2300004: chair_audience_proxy.001
@@ -88,22 +78,19 @@ ModelImporter:
     2300016: chair_proxy.001
     2300018: chair_proxy.002
     2300020: chair_proxy.003
-    2300022: Cylinder
-    2300024: entrance
-    2300026: frontWall
-    2300028: frontWall_2
-    2300030: littlestair
-    2300032: littlestair.001
-    2300034: playFieldArea
-    2300036: scoreTable_proxy
-    2300038: scoreTable_proxy.2
-    2300040: sidewall
-    2300042: stair
-    2300044: stair.001
-    2300046: stair.002
-    2300048: stair.003
-    2300050: stair.004
-    2300052: stair.005
+    2300022: entrance
+    2300024: frontWall
+    2300026: frontWall_2
+    2300028: littlestair
+    2300030: littlestair.001
+    2300032: playFieldArea
+    2300034: sidewall
+    2300036: stair
+    2300038: stair.001
+    2300040: stair.002
+    2300042: stair.003
+    2300044: stair.004
+    2300046: stair.005
     3300000: arena
     3300002: chair_audience_proxy
     3300004: chair_audience_proxy.001
@@ -115,45 +102,40 @@ ModelImporter:
     3300016: chair_proxy.001
     3300018: chair_proxy.002
     3300020: chair_proxy.003
-    3300022: Cylinder
-    3300024: entrance
-    3300026: frontWall
-    3300028: frontWall_2
-    3300030: littlestair
-    3300032: littlestair.001
-    3300034: playFieldArea
-    3300036: scoreTable_proxy
-    3300038: scoreTable_proxy.2
-    3300040: sidewall
-    3300042: stair
-    3300044: stair.001
-    3300046: stair.002
-    3300048: stair.003
-    3300050: stair.004
-    3300052: stair.005
-    4300000: Cylinder
-    4300002: scoreTable_proxy.2
-    4300004: stair.005
-    4300006: stair.004
-    4300008: stair.003
-    4300010: littlestair.001
-    4300012: stair.002
-    4300014: littlestair
-    4300016: stair.001
-    4300018: stair
-    4300020: entrance
-    4300022: chair_audience_proxy.005
-    4300024: chair_audience_proxy.004
-    4300026: chair_audience_proxy.003
-    4300028: chair_proxy.003
-    4300030: chair_audience_proxy.002
-    4300032: chair_audience_proxy.001
-    4300034: chair_audience_proxy
-    4300036: arena
-    4300038: sidewall
-    4300040: frontWall_2
-    4300042: frontWall
-    4300044: playFieldArea
+    3300022: entrance
+    3300024: frontWall
+    3300026: frontWall_2
+    3300028: littlestair
+    3300030: littlestair.001
+    3300032: playFieldArea
+    3300034: sidewall
+    3300036: stair
+    3300038: stair.001
+    3300040: stair.002
+    3300042: stair.003
+    3300044: stair.004
+    3300046: stair.005
+    4300000: stair.005
+    4300002: stair.004
+    4300004: stair.003
+    4300006: littlestair.001
+    4300008: stair.002
+    4300010: littlestair
+    4300012: stair.001
+    4300014: stair
+    4300016: entrance
+    4300018: chair_audience_proxy.005
+    4300020: chair_audience_proxy.004
+    4300022: chair_audience_proxy.003
+    4300024: chair_proxy.003
+    4300026: chair_audience_proxy.002
+    4300028: chair_audience_proxy.001
+    4300030: chair_audience_proxy
+    4300032: arena
+    4300034: sidewall
+    4300036: frontWall_2
+    4300038: frontWall
+    4300040: playFieldArea
   materials:
     importMaterials: 1
     materialName: 0
