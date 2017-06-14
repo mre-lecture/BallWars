@@ -120,7 +120,7 @@ public class Launcher : Photon.PunBehaviour
         {
             player.transform.position = new Vector3(0, 10, 0);
             player.transform.rotation = transform.rotation = Quaternion.Euler(90, 0, 0);
-            Instantiate(GameBallMaster, new Vector3(0,0), Quaternion.identity);
+            Instantiate(GameBallMaster, new Vector3(0,1,0), Quaternion.identity);
             PhotonNetwork.Instantiate("GoalBallClient", new Vector3(0, 0), Quaternion.identity,0);
         }
         else

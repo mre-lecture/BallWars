@@ -15,10 +15,15 @@ public class MasterCommunicator : Photon.MonoBehaviour {
 
 
 
-    void onCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision other)
     {
-        Vector3 hitpoint = other.contacts[0].normal;
-        hitBall(hitpoint);
+       
+        if (other.gameObject.CompareTag("Ball"))
+        {
+            Vector3 hitpoint = other.contacts[0].normal;
+            hitpoint = Vector3.Scale(hitpoint, new Vector3(-1, -100, -1));
+            hitBall(hitpoint);
+        }
     }
 
     void hitBall(Vector3 hitpoint)
