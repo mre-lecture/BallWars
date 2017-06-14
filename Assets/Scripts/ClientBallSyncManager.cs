@@ -16,7 +16,6 @@ public class ClientBallSyncManager : Photon.MonoBehaviour {
     //Inform that something collite with the client ball
     void OnCollisionEnter(Collision other)
     {
-        Debug.Break();
         //If a tennis ball hit the client ball, inform the master client about that
         if (other.gameObject.CompareTag("Ball"))
         {

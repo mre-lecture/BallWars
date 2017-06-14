@@ -38,9 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BattleStadion.unity
     guid: b584b35e4c5be8742b6105d2c05b891a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/audience.unity
     guid: 8eae37e1d99465e4f954a1cddc1fb4f5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BuiltScene.unity
     guid: b0d4a57125f2eac4e8ee2dce3c5c756d
