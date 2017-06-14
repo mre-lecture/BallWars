@@ -13,15 +13,14 @@ public class MasterCommunicator : Photon.MonoBehaviour {
         }
 	}
 
-
-
     void OnCollisionEnter(Collision other)
     {
        
         if (other.gameObject.CompareTag("Ball"))
         {
             Vector3 hitpoint = other.contacts[0].normal;
-            hitpoint = Vector3.Scale(hitpoint, new Vector3(-20, -20, -20));
+            var speed = other.gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+            hitpoint = Vector3.Scale(hitpoint, new Vector3(speed, speed, speed));
             hitBall(hitpoint);
         }
     }
@@ -35,15 +34,5 @@ public class MasterCommunicator : Photon.MonoBehaviour {
     void BallWasHitMessage(Vector3 hitpoint)
     {
         GameBallSyncManager.Instance.hitBall(hitpoint);
-    }
-
-    private Vector3 GetPointOfContact()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit))
-        {
-            return hit.point;
-        }
-        return new Vector3(0,0,0);
     }
 }
