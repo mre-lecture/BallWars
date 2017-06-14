@@ -18,6 +18,7 @@ public class Launcher : Photon.PunBehaviour
     public byte MaxPlayersPerRoom = 2;
 
     private GameObject currentPlayer;
+    public GameObject GameBallMaster;
     #endregion
 
     #region Private Variables
@@ -26,6 +27,9 @@ public class Launcher : Photon.PunBehaviour
     /// This client's version number. Users are separated from each other by gameversion (which allows you to make breaking changes).
     /// </summary>
     string _gameVersion = "1";
+    public static int joinedPlayer = 0;
+
+
 
     #endregion
 
@@ -107,19 +111,31 @@ public class Launcher : Photon.PunBehaviour
 
     public override void OnJoinedRoom()
     {
-        Debug.Log("DemoAnimator/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.");
+        joinedPlayer = PhotonNetwork.playerList.Length;
+        Debug.Log("DemoAnimator/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room. PlayerNumber:" + joinedPlayer);
         PhotonNetwork.Instantiate("Avatar", new Vector3(-8, 0), Quaternion.identity, 0);
         GameObject player = GameObject.FindWithTag("Player");
 
         if (PhotonNetwork.isMasterClient)
         {
-            player.transform.position = new Vector3(-7, 0, 0);
+            player.transform.position = new Vector3(0, 10, 0);
+            player.transform.rotation = transform.rotation = Quaternion.Euler(90, 0, 0);
+            Instantiate(GameBallMaster, new Vector3(0,0), Quaternion.identity);
+            PhotonNetwork.Instantiate("GoalBallClient", new Vector3(0, 0), Quaternion.identity,0);
         }
         else
         {
-            player.transform.position = new Vector3(7, 0, 0);
-            player.transform.rotation = transform.rotation = Quaternion.Euler(0, -90, 0);
-
+            if (joinedPlayer == 2)
+            {
+                player.transform.position = new Vector3(7, 0, 0);
+                player.transform.rotation = transform.rotation = Quaternion.Euler(0, -90, 0);
+            }
+            else
+            {
+                player.transform.position = new Vector3(-7, 0, 0);
+          
+            }
+            
         }
     }
 
