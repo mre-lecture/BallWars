@@ -21,7 +21,7 @@ public class MasterCommunicator : Photon.MonoBehaviour {
         if (other.gameObject.CompareTag("Ball"))
         {
             Vector3 hitpoint = other.contacts[0].normal;
-            hitpoint = Vector3.Scale(hitpoint, new Vector3(-1, -100, -1));
+            hitpoint = Vector3.Scale(hitpoint, new Vector3(-20, -20, -20));
             hitBall(hitpoint);
         }
     }
