@@ -8,7 +8,7 @@ public class FollowObject : MonoBehaviour {
 
     void Start()
     {
-        followingObject = GameBallSyncManager.Instance.getGameBall();
+        followingObject = MasterBallSyncManager.Instance.GetMasterGameBall();
     }
        
 	void Update () {

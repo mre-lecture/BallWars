@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Launcher : Photon.PunBehaviour
+public class PhotonConnectionManager : Photon.PunBehaviour
 {
     #region Public Variables
 

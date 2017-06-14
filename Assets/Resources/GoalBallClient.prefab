@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 135180474599946922}
   - component: {fileID: 23655923841532740}
   - component: {fileID: 114913418594053654}
-  - component: {fileID: 114668896304694920}
-  - component: {fileID: 114378655612286516}
+  - component: {fileID: 114639050050053854}
+  - component: {fileID: 114209546589764730}
   m_Layer: 14
   m_Name: GoalBallClient
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1811197418205368}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114378655612286516
+--- !u!114 &114209546589764730
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -149,7 +149,7 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &114668896304694920
+--- !u!114 &114639050050053854
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -169,7 +169,7 @@ MonoBehaviour:
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
   ObservedComponents:
-  - {fileID: 114378655612286516}
+  - {fileID: 114209546589764730}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1

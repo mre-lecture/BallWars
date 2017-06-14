@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameBallSyncManager : MonoBehaviour {
+public class MasterBallSyncManager : MonoBehaviour {
 
     GameObject gameBall;
 
-    public static GameBallSyncManager Instance;
+    public static MasterBallSyncManager Instance;
 
     void Start()
     {
@@ -17,14 +17,14 @@ public class GameBallSyncManager : MonoBehaviour {
         }
     }
 
-    public GameObject getGameBall()
+    public GameObject GetMasterGameBall()
     {
         return gameBall;
     }
 
-    public void hitBall(Vector3 hitpoint)
+    public void HitBall(Vector3 hitNormale)
     {
         Debug.Log("hitBall");
-        gameBall.GetComponent<Rigidbody>().AddForce(hitpoint, ForceMode.Impulse);
+        gameBall.GetComponent<Rigidbody>().AddForce(hitNormale, ForceMode.Impulse);
     }
 }
