@@ -1457,6 +1457,7 @@ MonoBehaviour:
   m_Wallhit: {fileID: 0}
   m_SceneToLoad: 
   m_SceneToLoad2: 
+  m_SceneToLoad3: 
   m_CameraFade: {fileID: 0}
   m_SelectionRadial: {fileID: 0}
   m_InteractiveItem: {fileID: 0}
@@ -2810,6 +2811,7 @@ MonoBehaviour:
   m_Wallhit: {fileID: 8300000, guid: 873c6c86031b9da469964d356b498f28, type: 3}
   m_SceneToLoad: BattleStadion
   m_SceneToLoad2: BattleField
+  m_SceneToLoad3: Audience
   m_CameraFade: {fileID: 0}
   m_SelectionRadial: {fileID: 0}
   m_InteractiveItem: {fileID: 0}
