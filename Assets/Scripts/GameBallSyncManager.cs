@@ -25,14 +25,6 @@ public class GameBallSyncManager : MonoBehaviour {
     public void hitBall(Vector3 hitpoint)
     {
         Debug.Log("hitBall");
-        if(gameBall.transform.position.x > hitpoint.x)
-        {
-            gameBall.transform.position = gameBall.transform.position + new Vector3(-0.5f, 0, 0);
-        }
-        else
-        {
-            gameBall.transform.position = gameBall.transform.position + new Vector3(0.5f, 0, 0);
-        }
-        
+        gameBall.GetComponent<Rigidbody>().AddForce(hitpoint, ForceMode.Impulse);
     }
 }

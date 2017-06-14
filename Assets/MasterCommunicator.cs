@@ -13,9 +13,11 @@ public class MasterCommunicator : Photon.MonoBehaviour {
         }
 	}
 
-    void OnTriggerEnter(Collider other)
+
+
+    void onCollisionEnter(Collision other)
     {
-        Vector3 hitpoint = GetPointOfContact();
+        Vector3 hitpoint = other.contacts[0].normal;
         hitBall(hitpoint);
     }
 
