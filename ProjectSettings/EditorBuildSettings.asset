@@ -8,28 +8,28 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/VRSampleScenes/Scenes/Intro.unity
     guid: 1c5fe2bf037ade84ca9ed9d97b0e1b97
-  - enabled: 1
+  - enabled: 0
     path: Assets/VRSampleScenes/Scenes/MainMenu.unity
     guid: 3959fdef1e02d4d4fb01414c7de44414
-  - enabled: 1
+  - enabled: 0
     path: Assets/VRSampleScenes/Scenes/Maze.unity
     guid: 00d8d8904282de34ca5c4e676602d75f
-  - enabled: 1
+  - enabled: 0
     path: Assets/VRSampleScenes/Scenes/Flyer.unity
     guid: 105cf9eb7fcb45844a1354966d06fcf1
-  - enabled: 1
+  - enabled: 0
     path: Assets/VRSampleScenes/Scenes/Shooter360.unity
     guid: 77d89b9deefb6a5438a228683e280537
-  - enabled: 1
+  - enabled: 0
     path: Assets/VRSampleScenes/Scenes/Shooter180.unity
     guid: b62ef4a8c87fa764bbfdb7d250ce1c08
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: fec62290d1e0fb445a972866938919f1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MenuScene.unity
     guid: 9229865bd500dd841ad443090b610ad2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MyOwnScenes.unity
     guid: 91359582693362d448f1dc47dba6eed3
   - enabled: 1
