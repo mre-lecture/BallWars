@@ -32,15 +32,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MyOwnScenes.unity
     guid: 91359582693362d448f1dc47dba6eed3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BattleField.unity
     guid: 2a19fc3d94306434eaa92bb0f01060de
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BattleStadion.unity
     guid: b584b35e4c5be8742b6105d2c05b891a
   - enabled: 0
     path: Assets/Scenes/audience.unity
     guid: 8eae37e1d99465e4f954a1cddc1fb4f5
   - enabled: 0
-    path: Assets/Scenes/BuiltScene.unity
+    path: Assets/Scenes/ScoreScene.unity
     guid: b0d4a57125f2eac4e8ee2dce3c5c756d
+  - enabled: 1
+    path: Assets/Scenes/CompositeSceneBattlestuff.unity
+    guid: 2ecf049c2fcd8314aa932861e1dbb48c
