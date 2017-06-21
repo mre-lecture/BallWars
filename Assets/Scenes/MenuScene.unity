@@ -191,6 +191,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 5.9852066
       objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: viewIdField
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: instantiationId
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5bc571382c3759499507ab34172397c, type: 2}
   m_IsPrefabParent: 0
@@ -401,6 +411,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 5.9852066
       objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: viewIdField
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: instantiationId
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5bc571382c3759499507ab34172397c, type: 2}
   m_IsPrefabParent: 0
@@ -460,6 +480,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 5.9852066
       objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: viewIdField
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: instantiationId
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5bc571382c3759499507ab34172397c, type: 2}
   m_IsPrefabParent: 0
@@ -518,6 +548,16 @@ Prefab:
     - target: {fileID: 4769770367104772, guid: a5bc571382c3759499507ab34172397c, type: 2}
       propertyPath: m_LocalScale.z
       value: 5.9852066
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: viewIdField
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: instantiationId
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5bc571382c3759499507ab34172397c, type: 2}
@@ -634,6 +674,16 @@ Prefab:
     - target: {fileID: 4769770367104772, guid: a5bc571382c3759499507ab34172397c, type: 2}
       propertyPath: m_LocalScale.z
       value: 5.9852066
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: viewIdField
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: instantiationId
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5bc571382c3759499507ab34172397c, type: 2}
@@ -1456,8 +1506,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Wallhit: {fileID: 0}
   m_SceneToLoad: 
-  m_SceneToLoad2: 
-  m_SceneToLoad3: 
   m_CameraFade: {fileID: 0}
   m_SelectionRadial: {fileID: 0}
   m_InteractiveItem: {fileID: 0}
@@ -1642,6 +1690,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 5.9852066
       objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: viewIdField
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: instantiationId
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5bc571382c3759499507ab34172397c, type: 2}
   m_IsPrefabParent: 0
@@ -1811,6 +1869,16 @@ Prefab:
     - target: {fileID: 4769770367104772, guid: a5bc571382c3759499507ab34172397c, type: 2}
       propertyPath: m_LocalScale.z
       value: 5.9852066
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: viewIdField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: instantiationId
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5bc571382c3759499507ab34172397c, type: 2}
@@ -2176,6 +2244,16 @@ Prefab:
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2039380833}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: viewIdField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: instantiationId
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5bc571382c3759499507ab34172397c, type: 2}
   m_IsPrefabParent: 0
@@ -2809,9 +2887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Wallhit: {fileID: 8300000, guid: 873c6c86031b9da469964d356b498f28, type: 3}
-  m_SceneToLoad: BattleStadion
-  m_SceneToLoad2: BattleField
-  m_SceneToLoad3: ScoreScene
+  m_SceneToLoad: CompositeSceneBattlestuff
   m_CameraFade: {fileID: 0}
   m_SelectionRadial: {fileID: 0}
   m_InteractiveItem: {fileID: 0}
@@ -3243,6 +3319,16 @@ Prefab:
     - target: {fileID: 4769770367104772, guid: a5bc571382c3759499507ab34172397c, type: 2}
       propertyPath: m_LocalScale.z
       value: 5.9852066
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114623898909786690, guid: a5bc571382c3759499507ab34172397c,
+        type: 2}
+      propertyPath: instantiationId
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5bc571382c3759499507ab34172397c, type: 2}
