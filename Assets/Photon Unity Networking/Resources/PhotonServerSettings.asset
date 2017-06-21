@@ -44,4 +44,5 @@ MonoBehaviour:
   - TaggedPlayer
   - BallWasHitMessage
   - IncreasePlayerPoints
+  - StartGame
   DisableAutoOpenWizard: 1
