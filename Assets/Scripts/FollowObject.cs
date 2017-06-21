@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class FollowObject : MonoBehaviour {
 
-    public GameObject followingObject;
+    GameObject followingObject;
 
-
+    void Start()
+    {
+        followingObject = MasterBallSyncManager.Instance.GetMasterGameBall();
+    }
+       
 	void Update () {
-
-        transform.LookAt(followingObject.transform);
+        if(followingObject != null) 
+            transform.LookAt(followingObject.transform);
 
 	}
 }

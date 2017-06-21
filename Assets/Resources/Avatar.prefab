@@ -24,10 +24,10 @@ GameObject:
   - component: {fileID: 23830284732665474}
   - component: {fileID: 114902052110353738}
   - component: {fileID: 114128629812412250}
-  - component: {fileID: 114069462086610192}
+  - component: {fileID: 114199028315574208}
   m_Layer: 0
   m_Name: Avatar
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,17 +96,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114069462086610192
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1899720929362374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eab536dc5bbbc448ad38e39e3787e10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114128629812412250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,6 +161,17 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &114199028315574208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1899720929362374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da59b0786d8118341a9f7aaa95b45458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114902052110353738
 MonoBehaviour:
   m_ObjectHideFlags: 1
