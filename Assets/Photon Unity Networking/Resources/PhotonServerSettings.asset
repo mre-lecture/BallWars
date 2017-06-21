@@ -43,4 +43,5 @@ MonoBehaviour:
   - RequestForPickupTimes
   - TaggedPlayer
   - BallWasHitMessage
+  - IncreasePlayerPoints
   DisableAutoOpenWizard: 1
