@@ -22,11 +22,4 @@ public class TennisBallSyncManager : Photon.MonoBehaviour {
             }
         }
     }
-
-    public void setThrowing(bool value)
-    {
-        isThrowing = value;
-    }
-
-
 }

@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ClientBallSyncManager : Photon.MonoBehaviour {
-
-    Vector3 lastLoadPosition;
-    Quaternion lastLoadRotation;
 	
 	// Update is called once per frame
 	void Update () {
@@ -13,13 +10,6 @@ public class ClientBallSyncManager : Photon.MonoBehaviour {
         {
             this.transform.position = MasterBallSyncManager.Instance.GetMasterGameBall().transform.position;
             this.transform.rotation = MasterBallSyncManager.Instance.GetMasterGameBall().transform.rotation;
-        }
-        else
-        {
-            if(lastLoadPosition != null)
-            {
-                gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, lastLoadPosition, 1.0f);
-            }
         }
 	}
 
@@ -61,7 +51,7 @@ public class ClientBallSyncManager : Photon.MonoBehaviour {
         else
         {
             gameObject.transform.rotation = (Quaternion)stream.ReceiveNext();
-            lastLoadPosition = (Vector3)stream.ReceiveNext();
+            gameObject.transform.position = (Vector3)stream.ReceiveNext();
         }
     }
 }
