@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c85c7ad3cf7ddb742987ba64bbdb653a
-timeCreated: 1496168204
+guid: 88cc4b3d5e172ea43a765668a3c1f6a8
+timeCreated: 1497984184
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -17,13 +17,13 @@ ModelImporter:
     100018: chair_proxy.001
     100020: chair_proxy.002
     100022: chair_proxy.003
-    100024: entrance
-    100026: frontWall
-    100028: frontWall_2
-    100030: Import Objects
-    100032: littlestair
-    100034: littlestair.001
-    100036: Mirror Object
+    100024: chair_proxy.004
+    100026: chair_proxy.005
+    100028: entrance
+    100030: frontWall
+    100032: frontWall_2
+    100034: littlestair
+    100036: littlestair.001
     100038: playFieldArea
     100040: sidewall
     100042: stair
@@ -32,10 +32,6 @@ ModelImporter:
     100048: stair.003
     100050: stair.004
     100052: stair.005
-    100054: Stairs
-    100056: Sun
-    100058: Sun.001
-    100060: Walls
     400000: arena
     400002: //RootNode
     400004: chair_audience_proxy
@@ -48,13 +44,13 @@ ModelImporter:
     400018: chair_proxy.001
     400020: chair_proxy.002
     400022: chair_proxy.003
-    400024: entrance
-    400026: frontWall
-    400028: frontWall_2
-    400030: Import Objects
-    400032: littlestair
-    400034: littlestair.001
-    400036: Mirror Object
+    400024: chair_proxy.004
+    400026: chair_proxy.005
+    400028: entrance
+    400030: frontWall
+    400032: frontWall_2
+    400034: littlestair
+    400036: littlestair.001
     400038: playFieldArea
     400040: sidewall
     400042: stair
@@ -63,10 +59,6 @@ ModelImporter:
     400048: stair.003
     400050: stair.004
     400052: stair.005
-    400054: Stairs
-    400056: Sun
-    400058: Sun.001
-    400060: Walls
     2300000: arena
     2300002: chair_audience_proxy
     2300004: chair_audience_proxy.001
@@ -78,19 +70,21 @@ ModelImporter:
     2300016: chair_proxy.001
     2300018: chair_proxy.002
     2300020: chair_proxy.003
-    2300022: entrance
-    2300024: frontWall
-    2300026: frontWall_2
-    2300028: littlestair
-    2300030: littlestair.001
-    2300032: playFieldArea
-    2300034: sidewall
-    2300036: stair
-    2300038: stair.001
-    2300040: stair.002
-    2300042: stair.003
-    2300044: stair.004
-    2300046: stair.005
+    2300022: chair_proxy.004
+    2300024: chair_proxy.005
+    2300026: entrance
+    2300028: frontWall
+    2300030: frontWall_2
+    2300032: littlestair
+    2300034: littlestair.001
+    2300036: playFieldArea
+    2300038: sidewall
+    2300040: stair
+    2300042: stair.001
+    2300044: stair.002
+    2300046: stair.003
+    2300048: stair.004
+    2300050: stair.005
     3300000: arena
     3300002: chair_audience_proxy
     3300004: chair_audience_proxy.001
@@ -102,19 +96,21 @@ ModelImporter:
     3300016: chair_proxy.001
     3300018: chair_proxy.002
     3300020: chair_proxy.003
-    3300022: entrance
-    3300024: frontWall
-    3300026: frontWall_2
-    3300028: littlestair
-    3300030: littlestair.001
-    3300032: playFieldArea
-    3300034: sidewall
-    3300036: stair
-    3300038: stair.001
-    3300040: stair.002
-    3300042: stair.003
-    3300044: stair.004
-    3300046: stair.005
+    3300022: chair_proxy.004
+    3300024: chair_proxy.005
+    3300026: entrance
+    3300028: frontWall
+    3300030: frontWall_2
+    3300032: littlestair
+    3300034: littlestair.001
+    3300036: playFieldArea
+    3300038: sidewall
+    3300040: stair
+    3300042: stair.001
+    3300044: stair.002
+    3300046: stair.003
+    3300048: stair.004
+    3300050: stair.005
     4300000: stair.005
     4300002: stair.004
     4300004: stair.003
@@ -124,10 +120,10 @@ ModelImporter:
     4300012: stair.001
     4300014: stair
     4300016: entrance
-    4300018: chair_audience_proxy.005
-    4300020: chair_audience_proxy.004
-    4300022: chair_audience_proxy.003
-    4300024: chair_proxy.003
+    4300018: chair_proxy.005
+    4300020: chair_audience_proxy.005
+    4300022: chair_audience_proxy.004
+    4300024: chair_audience_proxy.003
     4300026: chair_audience_proxy.002
     4300028: chair_audience_proxy.001
     4300030: chair_audience_proxy

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17278662, g: 0.21591693, b: 0.297856, a: 1}
+  m_IndirectSpecularColor: {r: 0.17278662, g: 0.21591699, b: 0.29785576, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1457,6 +1457,7 @@ MonoBehaviour:
   m_Wallhit: {fileID: 0}
   m_SceneToLoad: 
   m_SceneToLoad2: 
+  m_SceneToLoad3: 
   m_CameraFade: {fileID: 0}
   m_SelectionRadial: {fileID: 0}
   m_InteractiveItem: {fileID: 0}
@@ -2810,6 +2811,7 @@ MonoBehaviour:
   m_Wallhit: {fileID: 8300000, guid: 873c6c86031b9da469964d356b498f28, type: 3}
   m_SceneToLoad: BattleStadion
   m_SceneToLoad2: BattleField
+  m_SceneToLoad3: ScoreScene
   m_CameraFade: {fileID: 0}
   m_SelectionRadial: {fileID: 0}
   m_InteractiveItem: {fileID: 0}

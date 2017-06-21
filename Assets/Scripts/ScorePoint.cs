@@ -18,7 +18,7 @@ public class ScorePoint : MonoBehaviour {
 	private Renderer renderer;
 
 	public void Start(){
-		
+		transform.gameObject.tag = "ScorePoint";
 		renderer = GetComponent<Renderer> ();
 		SetColor (Color.Red);
 		renderer.material = mat;
