@@ -24,7 +24,9 @@ public class AvatarSyncManager : Photon.MonoBehaviour {
             this.transform.rotation = playerObject.transform.rotation;
             this.transform.rotation = new Quaternion(0, this.transform.rotation.y, 0, this.transform.rotation.w);
 
+            GameObject dudeObject = transform.GetChild(0).gameObject;
             gameObject.layer = 15;
+            dudeObject.layer = 15;
         }
     }
 }
