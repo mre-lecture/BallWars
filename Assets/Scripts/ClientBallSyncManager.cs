@@ -40,7 +40,7 @@ public class ClientBallSyncManager : Photon.MonoBehaviour {
         //Inform Master Ball that the client ball was hit
         MasterBallSyncManager.Instance.HitBall(hitNormale);
     }
-    /*
+    
     void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.isWriting)
@@ -53,5 +53,5 @@ public class ClientBallSyncManager : Photon.MonoBehaviour {
             gameObject.transform.rotation = (Quaternion)stream.ReceiveNext();
             gameObject.transform.position = (Vector3)stream.ReceiveNext();
         }
-    }*/
+    }
 }
