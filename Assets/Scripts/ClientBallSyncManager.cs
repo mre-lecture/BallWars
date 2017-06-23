@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ClientBallSyncManager : Photon.MonoBehaviour {
+
+	GameObject masterBall;
 	
 	// Update is called once per frame
 	void Update () {
         if(PhotonNetwork.isMasterClient)
         {
-            this.transform.position = MasterBallSyncManager.Instance.GetMasterGameBall().transform.position;
-            this.transform.rotation = MasterBallSyncManager.Instance.GetMasterGameBall().transform.rotation;
+			if (masterBall == null) {
+				masterBall = MasterBallSyncManager.Instance.GetMasterGameBall();
+			}
+			this.transform.position = masterBall.transform.position;
+			this.transform.rotation = masterBall.transform.rotation;
         }
 	}
 

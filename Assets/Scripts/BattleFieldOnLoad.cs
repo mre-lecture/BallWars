@@ -15,6 +15,7 @@ public class BattleFieldOnLoad : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		/*
         goalball = GameObject.Find("Goalball");
         Transform ball = goalball.GetComponent<Transform>();
 
@@ -39,5 +40,6 @@ public class BattleFieldOnLoad : MonoBehaviour {
                 print("Audio Source or Goalball is null");
             }
         }
+        */
     }
 }

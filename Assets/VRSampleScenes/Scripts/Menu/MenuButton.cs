@@ -79,7 +79,7 @@ namespace VRStandardAssets.Menu
             yield return StartCoroutine(m_CameraFade.BeginFadeOut(true));
 
             // Load the level.
-            SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -88,7 +88,7 @@ namespace VRStandardAssets.Menu
             // Load the level.
             fadeScene();
             Invoke("FadeFromWhite", 3f);
-            SceneManager.LoadScene(m_SceneToLoad, LoadSceneMode.Single);
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
 
         private void fadeScene()

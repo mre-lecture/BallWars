@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
 	void Start(){
 		transform.gameObject.tag = "GameManager";
 		sc = new ScoreCounter ();
+		scores = GameObject.FindGameObjectsWithTag ("ScorePoint");
 	}
 
 	public ScoreCounter GetScoreCounter(){
@@ -19,7 +20,6 @@ public class GameManager : MonoBehaviour {
 
 	//Update the ScorePoints on the Table
 	private void UpdateScores(){
-		scores = GameObject.FindGameObjectsWithTag ("ScorePoint");
 		foreach(GameObject obj in scores){
 			ScorePoint score = obj.GetComponent<ScorePoint>();
 			if (score.player == ScorePoint.Player.Player_1){

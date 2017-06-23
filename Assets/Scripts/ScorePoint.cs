@@ -12,16 +12,20 @@ public class ScorePoint : MonoBehaviour {
 	public Position position;
 
 	private int positionNumber;
-	private Material mat;
+	private Material redMat;
+	private Material greenMat;
 	private string red_mat = "score_red";
 	private string green_mat = "score_green";
 	private Renderer renderer;
 
 	public void Start(){
+		redMat = Resources.Load (red_mat) as Material;
+		greenMat = Resources.Load(green_mat) as Material;
+
 		transform.gameObject.tag = "ScorePoint";
 		renderer = GetComponent<Renderer> ();
 		SetColor (Color.Red);
-		renderer.material = mat;
+		renderer.material = redMat;
 
 		SetPositionNumner ();
 	}
@@ -52,12 +56,10 @@ public class ScorePoint : MonoBehaviour {
 	private void SetColor(Color col){
 		switch (col) {
 		case Color.Red:
-			mat = Resources.Load (red_mat) as Material;
-			renderer.material = mat;
+			renderer.material = redMat;
 			break;
 		case Color.Green:
-			mat = Resources.Load(green_mat) as Material;
-			renderer.material = mat;
+			renderer.material = greenMat;
 			break;
 		}
 	}
