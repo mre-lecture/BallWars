@@ -140,10 +140,6 @@ public class PhotonConnectionManager : Photon.PunBehaviour
     [PunRPC]
     void StartGame()
     {
-		BallSpawner[] spawn = GetComponents<BallSpawner> ();
-		foreach(BallSpawner spawner in spawn){
-			spawner.StartSpawnObjects();
-		}
         Instantiate(GameBallMaster, new Vector3(0, 1, 0), Quaternion.identity);
         PhotonNetwork.Instantiate("GoalBallClient", new Vector3(0, 0), Quaternion.identity, 0);
     }

@@ -12,13 +12,17 @@ public class BallSpawner : Photon.MonoBehaviour {
     private int NumberOfBalls = 0; // Too many balls is not good....
 
 	// Use this for initialization
+	void Start () {
+        InvokeRepeating("SpawnObject", SpawnStartDelay, SpawnDelayBetween);
+	}
 
     public void SpawnObject()
     {
-        if (NumberOfBalls < MaximumAmountOfBalls)
-        {
-			var spawnedObject = PhotonNetwork.Instantiate("Tennisball",gameObject.transform.position, Quaternion.identity,0);
-        }
+		if (PhotonNetwork.isMasterClient) {
+			if (NumberOfBalls < MaximumAmountOfBalls) {
+				var spawnedObject = PhotonNetwork.Instantiate ("Tennisball", gameObject.transform.position, Quaternion.identity, 0);
+			}
+		}
     }
 	
 	// Update is called once per frame
@@ -35,8 +39,4 @@ public class BallSpawner : Photon.MonoBehaviour {
     {
         --NumberOfBalls;
     }
-
-	public void StartSpawnObjects(){
-		InvokeRepeating("SpawnObject", SpawnStartDelay, SpawnDelayBetween);
-	}
 }
