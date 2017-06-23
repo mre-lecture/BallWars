@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallSpawner : MonoBehaviour {
+public class BallSpawner : Photon.MonoBehaviour {
 
     public GameObject ObjectToSpawn;
     public float SpawnStartDelay = 1.0f;
@@ -12,16 +12,12 @@ public class BallSpawner : MonoBehaviour {
     private int NumberOfBalls = 0; // Too many balls is not good....
 
 	// Use this for initialization
-	void Start () {
-        InvokeRepeating("SpawnObject", SpawnStartDelay, SpawnDelayBetween);
-	}
 
     public void SpawnObject()
     {
         if (NumberOfBalls < MaximumAmountOfBalls)
         {
-            var spawnedObject = Instantiate(ObjectToSpawn);
-            spawnedObject.transform.position = gameObject.transform.position;
+			var spawnedObject = PhotonNetwork.Instantiate("Tennisball",gameObject.transform.position, Quaternion.identity,0);
         }
     }
 	
@@ -39,4 +35,8 @@ public class BallSpawner : MonoBehaviour {
     {
         --NumberOfBalls;
     }
+
+	public void StartSpawnObjects(){
+		InvokeRepeating("SpawnObject", SpawnStartDelay, SpawnDelayBetween);
+	}
 }

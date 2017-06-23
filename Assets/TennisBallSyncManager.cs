@@ -8,8 +8,6 @@ public class TennisBallSyncManager : Photon.MonoBehaviour {
 
     void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        if (isThrowing)
-        {
             if (stream.isWriting)
             {
                 stream.SendNext(gameObject.transform.rotation);
@@ -20,6 +18,5 @@ public class TennisBallSyncManager : Photon.MonoBehaviour {
                 gameObject.transform.rotation = (Quaternion)stream.ReceiveNext();
                 gameObject.transform.position = (Vector3)stream.ReceiveNext();
             }
-        }
     }
 }
