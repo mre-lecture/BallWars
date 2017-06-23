@@ -39,4 +39,16 @@ public class BallSpawner : Photon.MonoBehaviour {
     {
         --NumberOfBalls;
     }
+
+	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+	{
+		if (stream.isWriting) {
+			stream.SendNext (NumberOfBalls);
+		} else {
+			int numberOfballs = (int)stream.ReceiveNext ();
+			if (numberOfballs < MaximumAmountOfBalls) {
+				NumberOfBalls = numberOfballs;
+			}
+		}
+	}
 }
