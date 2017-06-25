@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/VRSampleScenes/Scenes/Shooter180.unity
     guid: b62ef4a8c87fa764bbfdb7d250ce1c08
   - enabled: 0
-    path: Assets/Scenes/TestScene.unity
+    path: 
     guid: fec62290d1e0fb445a972866938919f1
   - enabled: 1
     path: Assets/Scenes/MenuScene.unity
@@ -33,5 +33,5 @@ EditorBuildSettings:
     path: Assets/Scenes/ArenaScene.unity
     guid: 2ecf049c2fcd8314aa932861e1dbb48c
   - enabled: 0
-    path: Assets/Scenes/MyOwnScenes.unity
+    path: 
     guid: 91359582693362d448f1dc47dba6eed3

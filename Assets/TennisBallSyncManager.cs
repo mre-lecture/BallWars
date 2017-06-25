@@ -4,19 +4,9 @@ using UnityEngine;
 
 public class TennisBallSyncManager : Photon.MonoBehaviour {
 
-    bool isThrowing = false;
-
-    void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    public void CreateSyncAvatar()
     {
-            if (stream.isWriting)
-            {
-                stream.SendNext(gameObject.transform.rotation);
-                stream.SendNext(gameObject.transform.position);
-            }
-            else
-            {
-                gameObject.transform.rotation = (Quaternion)stream.ReceiveNext();
-                gameObject.transform.position = (Vector3)stream.ReceiveNext();
-            }
+       GameObject avatar =  PhotonNetwork.Instantiate("TennisballAvatar", gameObject.transform.position, gameObject.transform.rotation, 0);
+       avatar.GetComponent<TennisballAvatarSyncManager>().setRelatedTennisballForAvatar(gameObject);
     }
 }

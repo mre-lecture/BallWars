@@ -29,10 +29,9 @@ GameObject:
   - component: {fileID: 114694548033651354}
   - component: {fileID: 114824680345548322}
   - component: {fileID: 96491691516183682}
-  - component: {fileID: 114566377200601812}
-  - component: {fileID: 114623898909786690}
+  - component: {fileID: 114423636517470228}
   m_Layer: 0
-  m_Name: Tennisball
+  m_Name: tennisball
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -266,7 +265,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   snapAttachEaseInCompleted: 0
---- !u!114 &114566377200601812
+--- !u!114 &114423636517470228
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -277,32 +276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58fd301e3cc931444ac427d65215554b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114623898909786690
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1798439175301960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ownerId: 0
-  group: 0
-  OwnerShipWasTransfered: 0
-  prefixBackup: -1
-  synchronization: 3
-  onSerializeTransformOption: 3
-  onSerializeRigidBodyOption: 2
-  ownershipTransfer: 0
-  ObservedComponents:
-  - {fileID: 114566377200601812}
-  ObservedComponentsFoldoutOpen: 1
-  viewIdField: 0
-  instantiationId: -1
-  currentMasterID: -1
-  isRuntimeInstantiated: 0
 --- !u!114 &114683612370042778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -363,7 +336,18 @@ MonoBehaviour:
       PublicKeyToken=null
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114423636517470228}
+        m_MethodName: CreateSyncAvatar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   onDetachedFromHand:

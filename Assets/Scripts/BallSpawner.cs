@@ -18,11 +18,10 @@ public class BallSpawner : Photon.MonoBehaviour {
 
     public void SpawnObject()
     {
-		if (PhotonNetwork.isMasterClient) {
-			if (NumberOfBalls < MaximumAmountOfBalls) {
-				var spawnedObject = PhotonNetwork.Instantiate ("Tennisball", gameObject.transform.position, Quaternion.identity, 0);
-			}
-		}
+		if (NumberOfBalls < MaximumAmountOfBalls) {
+			var spawnedObject = Instantiate (ObjectToSpawn);
+            spawnedObject.transform.position = gameObject.transform.position;
+        }
     }
 	
 	// Update is called once per frame
@@ -39,16 +38,4 @@ public class BallSpawner : Photon.MonoBehaviour {
     {
         --NumberOfBalls;
     }
-
-	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-	{
-		if (stream.isWriting) {
-			stream.SendNext (NumberOfBalls);
-		} else {
-			int numberOfballs = (int)stream.ReceiveNext ();
-			if (numberOfballs < MaximumAmountOfBalls) {
-				NumberOfBalls = numberOfballs;
-			}
-		}
-	}
 }

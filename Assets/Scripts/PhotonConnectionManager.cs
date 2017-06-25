@@ -118,8 +118,8 @@ public class PhotonConnectionManager : Photon.PunBehaviour
 
         if (PhotonNetwork.isMasterClient)
         {
-            player.transform.position = new Vector3(0, 10, 0);
-            player.transform.rotation = transform.rotation = Quaternion.Euler(90, 0, 0);
+            player.transform.position = new Vector3(0, 0.7f, -10f);
+            player.transform.rotation = transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else
         {
@@ -143,13 +143,5 @@ public class PhotonConnectionManager : Photon.PunBehaviour
         Instantiate(GameBallMaster, new Vector3(0, 1, 0), Quaternion.identity);
         PhotonNetwork.Instantiate("GoalBallClient", new Vector3(0, 0), Quaternion.identity, 0);
     }
-
-    /*void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
-    {
-        if (PhotonNetwork.isMasterClient)
-        {
-            currentPlayer = PhotonNetwork.Instantiate("Tennisball", new Vector3(0, 1.6f, 0), Quaternion.identity, 0);
-        }
-    }*/
     #endregion
 }
