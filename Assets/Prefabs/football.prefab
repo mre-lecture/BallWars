@@ -31,6 +31,7 @@ GameObject:
   - component: {fileID: 96203883618583728}
   - component: {fileID: 114549267221919108}
   - component: {fileID: 114826415814777358}
+  - component: {fileID: 64165668655962128}
   m_Layer: 0
   m_Name: football
   m_TagString: Ball
@@ -105,6 +106,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &64165668655962128
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1056770332289616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 1
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 45c432e3a82629a4497623d7b6006d38, type: 3}
 --- !u!96 &96203883618583728
 TrailRenderer:
   serializedVersion: 2
@@ -427,7 +442,7 @@ SphereCollider:
   m_GameObject: {fileID: 1056770332289616}
   m_Material: {fileID: 13400000, guid: 9bc5c854b95797f48820ae081b330f04, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.01
   m_Center: {x: -0.0000000023283064, y: -0.0000000060535963, z: 0}
