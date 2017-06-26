@@ -86,15 +86,8 @@ namespace VRStandardAssets.Menu
         {
             SoundManager.instance.PlaySingle(m_Wallhit);
             // Load the level.
-            fadeScene();
             Invoke("FadeFromWhite", 3f);
             SceneManager.LoadScene(1, LoadSceneMode.Single);
-        }
-
-        private void fadeScene()
-        {
-            SteamVR_Fade.View(Color.clear, 0f);
-            SteamVR_Fade.View(Color.white, 3f);
         }
 
         private void FadeFromWhite()
