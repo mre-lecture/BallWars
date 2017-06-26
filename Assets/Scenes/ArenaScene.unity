@@ -581,6 +581,12 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: -8.48
       objectReference: {fileID: 0}
+    - target: {fileID: 114327165445677586, guid: aac25ce762ad3ea4cb0e78cc57be60b6,
+        type: 2}
+      propertyPath: GameBallMaster
+      value: 
+      objectReference: {fileID: 1488295376065222, guid: 0dac99e1e33db144bbf4a3f422b8d9bc,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aac25ce762ad3ea4cb0e78cc57be60b6, type: 2}
   m_IsPrefabParent: 0
