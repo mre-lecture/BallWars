@@ -13,7 +13,7 @@ public class ClientBallSyncManager : Photon.MonoBehaviour {
 			if (masterBall == null) {
 				masterBall = MasterBallSyncManager.Instance.GetMasterGameBall();
 			}
-			this.transform.position = masterBall.transform.position;
+			this.transform.position = Vector3.Lerp(this.transform.position, masterBall.transform.position, 1);
 			this.transform.rotation = masterBall.transform.rotation;
         }
 	}
