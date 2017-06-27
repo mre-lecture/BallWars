@@ -18,7 +18,9 @@ public class PhotonConnectionManager : Photon.PunBehaviour
     public byte MaxPlayersPerRoom = 3;
 
     private GameObject currentPlayer;
-    public GameObject GameBallMaster;
+    public GameObject GameBallBasketBallMaster;
+    public GameObject GameBallFootballMaster;
+    public GameObject GameBallGymballMaster;
     #endregion
 
     #region Private Variables
@@ -28,7 +30,7 @@ public class PhotonConnectionManager : Photon.PunBehaviour
     /// </summary>
     string _gameVersion = "1";
     public static int joinedPlayer = 0;
-
+    private string gameballname = "basketball";
 
 
     #endregion
@@ -127,6 +129,7 @@ public class PhotonConnectionManager : Photon.PunBehaviour
             {
                 player.transform.position = new Vector3(7, 0.3f, 0.5f);
                 player.transform.rotation = transform.rotation = Quaternion.Euler(0, -90, 0);
+                photonView.RPC("setGameBall", PhotonTargets.MasterClient, GameBallSelection.gameball);
             }
             else
             {
@@ -140,8 +143,28 @@ public class PhotonConnectionManager : Photon.PunBehaviour
     [PunRPC]
     void StartGame()
     {
-        Instantiate(GameBallMaster, new Vector3(0, 1, 0), Quaternion.identity);
-        PhotonNetwork.Instantiate("GoalBallFootClient", new Vector3(0, 0), Quaternion.identity, 0);
+        switch (gameballname)
+        {
+            case "gymball":
+                Instantiate(GameBallGymballMaster, new Vector3(0, 1, 0), Quaternion.identity);
+                PhotonNetwork.Instantiate("GoalBallGymClient", new Vector3(0, 0), Quaternion.identity, 0);
+                break;
+            case "football":
+                Instantiate(GameBallFootballMaster, new Vector3(0, 1, 0), Quaternion.identity);
+                PhotonNetwork.Instantiate("GoalBallFootClient", new Vector3(0, 0), Quaternion.identity, 0);
+                break;
+            default:
+                Instantiate(GameBallBasketBallMaster, new Vector3(0, 1, 0), Quaternion.identity);
+                PhotonNetwork.Instantiate("GoalBallClient", new Vector3(0, 0), Quaternion.identity, 0);
+                break;
+        }
     }
+
+    [PunRPC]
+    void setGameBall(string gameBall)
+    {
+        gameballname = gameBall;
+    }
+    
     #endregion
 }
