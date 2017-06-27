@@ -141,7 +141,7 @@ public class PhotonConnectionManager : Photon.PunBehaviour
     void StartGame()
     {
         Instantiate(GameBallMaster, new Vector3(0, 1, 0), Quaternion.identity);
-        PhotonNetwork.Instantiate("GoalBallClient", new Vector3(0, 0), Quaternion.identity, 0);
+        PhotonNetwork.Instantiate("GoalBallFootClient", new Vector3(0, 0), Quaternion.identity, 0);
     }
     #endregion
 }
