@@ -9,6 +9,7 @@ TagManager:
   - Gameball
   - AudienceAudio
   - Ball
+  - basketball
   layers:
   - Default
   - TransparentFX

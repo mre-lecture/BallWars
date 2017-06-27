@@ -58,25 +58,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
-  - {fileID: 2100000, guid: 8cddc96dde8b04e44a7794f163199139, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
