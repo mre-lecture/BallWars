@@ -14,16 +14,20 @@ namespace VRStandardAssets.Menu
         public AudioClip m_Wallhit;
         public event Action<MenuButton> OnButtonSelected;                   // This event is triggered when the selection of the button has finished.
 
-		[SerializeField] private string m_SceneToLoad;						// The name of the scene to load.
-        [SerializeField] private VRCameraFade m_CameraFade;                 // This fades the scene out when a new scene is about to be loaded.
-        [SerializeField] private SelectionRadial m_SelectionRadial;         // This controls when the selection is complete.
-        [SerializeField] private VRInteractiveItem m_InteractiveItem;       // The interactive item for where the user should click to load the level.
+        [SerializeField]
+        private string m_SceneToLoad;						// The name of the scene to load.
+        [SerializeField]
+        private VRCameraFade m_CameraFade;                 // This fades the scene out when a new scene is about to be loaded.
+        [SerializeField]
+        private SelectionRadial m_SelectionRadial;         // This controls when the selection is complete.
+        [SerializeField]
+        private VRInteractiveItem m_InteractiveItem;       // The interactive item for where the user should click to load the level.
 
 
         private bool m_GazeOver;                                            // Whether the user is looking at the VRInteractiveItem currently.
-        
 
-        private void OnEnable ()
+
+        private void OnEnable()
         {
             m_InteractiveItem.OnOver += HandleOver;
             m_InteractiveItem.OnOut += HandleOut;
@@ -31,13 +35,13 @@ namespace VRStandardAssets.Menu
         }
 
 
-        private void OnDisable ()
+        private void OnDisable()
         {
             m_InteractiveItem.OnOver -= HandleOver;
             m_InteractiveItem.OnOut -= HandleOut;
             m_SelectionRadial.OnSelectionComplete -= HandleSelectionComplete;
         }
-        
+
 
         private void HandleOver()
         {
@@ -60,8 +64,8 @@ namespace VRStandardAssets.Menu
         private void HandleSelectionComplete()
         {
             // If the user is looking at the rendering of the scene when the radial's selection finishes, activate the button.
-            if(m_GazeOver)
-                StartCoroutine (ActivateButton());
+            if (m_GazeOver)
+                StartCoroutine(ActivateButton());
         }
 
 
@@ -84,6 +88,25 @@ namespace VRStandardAssets.Menu
 
         private void OnTriggerEnter(Collider other)
         {
+            //save selected game ball
+            if (other.gameObject != null)
+            {
+                GameObject ball = other.gameObject;
+                string ballname = ball.name;
+
+                if (ballname.Contains("gymball"))
+                {
+                    GameBallSelection.changeGameBallSelected("gymball");
+                }
+                else if (ballname.Contains("football"))
+                {
+                    GameBallSelection.changeGameBallSelected("football");
+                }
+                else
+                {
+                    GameBallSelection.changeGameBallSelected("basketball");
+                }
+            }
             SoundManager.instance.PlaySingle(m_Wallhit);
             // Load the level.
             Invoke("FadeFromWhite", 3f);

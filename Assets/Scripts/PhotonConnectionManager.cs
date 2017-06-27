@@ -125,11 +125,13 @@ public class PhotonConnectionManager : Photon.PunBehaviour
         {
             if (joinedPlayer == 2)
             {
+                Debug.Log("2 Player joined");
                 player.transform.position = new Vector3(7, 0.3f, 0.5f);
                 player.transform.rotation = transform.rotation = Quaternion.Euler(0, -90, 0);
             }
             else
             {
+                Debug.Log("1 Player joined");
                 player.transform.position = new Vector3(-7, 0.3f, -0.5f);
                 photonView.RPC("StartGame", PhotonTargets.MasterClient);
             }
@@ -141,7 +143,21 @@ public class PhotonConnectionManager : Photon.PunBehaviour
     void StartGame()
     {
         Instantiate(GameBallMaster, new Vector3(0, 1, 0), Quaternion.identity);
-        PhotonNetwork.Instantiate("GoalBallFootClient", new Vector3(0, 0), Quaternion.identity, 0);
+        switch (GameBallSelection.gameball)
+        {
+            case "gymball":
+                PhotonNetwork.Instantiate("GoalBallGymClient", new Vector3(0, 0), Quaternion.identity, 0);
+                break;
+            case "football":
+                PhotonNetwork.Instantiate("GoalBallFootClient", new Vector3(0, 0), Quaternion.identity, 0);
+                break;
+            default:
+                PhotonNetwork.Instantiate("GoalBallClient", new Vector3(0, 0), Quaternion.identity, 0);
+                break;
+        }
+        Debug.Log("gameball instantiated: " + GameBallSelection.gameball);
+        Debug.Log("gameballmaster: " + GameBallMaster.name);
     }
+    
     #endregion
 }
