@@ -32,6 +32,8 @@ ModelImporter:
     100048: stair.003
     100050: stair.004
     100052: stair.005
+    100054: Camera
+    100056: Lamp
     400000: arena
     400002: //RootNode
     400004: chair_audience_proxy
@@ -59,6 +61,8 @@ ModelImporter:
     400048: stair.003
     400050: stair.004
     400052: stair.005
+    400054: Camera
+    400056: Lamp
     2300000: arena
     2300002: chair_audience_proxy
     2300004: chair_audience_proxy.001
@@ -132,6 +136,7 @@ ModelImporter:
     4300036: frontWall_2
     4300038: frontWall
     4300040: playFieldArea
+    4300042: chair_proxy
   materials:
     importMaterials: 1
     materialName: 0
