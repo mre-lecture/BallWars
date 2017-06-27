@@ -25,7 +25,7 @@ public class AvatarSyncManager : Photon.MonoBehaviour {
 			} else {
 				//For Block People
 				this.transform.position = playerObject.transform.position;
-				this.transform.position = new Vector3(this.transform.position.x , this.transform.position.y-1.6f, this.transform.position.z);
+				this.transform.position = new Vector3(this.transform.position.x , this.transform.position.y-1.9f, this.transform.position.z);
 				this.transform.rotation = playerObject.transform.rotation;
 				this.transform.rotation = new Quaternion(0, this.transform.rotation.y, 0, this.transform.rotation.w);
 			}
