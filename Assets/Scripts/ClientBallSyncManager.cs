@@ -5,17 +5,26 @@ using UnityEngine;
 public class ClientBallSyncManager : Photon.MonoBehaviour {
 
 	GameObject masterBall;
+
+    private Quaternion nextRotation;
+    private Vector3 nextPosition;
 	
 	// Update is called once per frame
 	void Update () {
-        if(PhotonNetwork.isMasterClient)
-        {
-			if (masterBall == null) {
-				masterBall = MasterBallSyncManager.Instance.GetMasterGameBall();
-			}
-			this.transform.position = Vector3.Lerp(this.transform.position, masterBall.transform.position, 1);
-			this.transform.rotation = masterBall.transform.rotation;
-        }
+	    if (PhotonNetwork.isMasterClient)
+	    {
+	        if (masterBall == null)
+	        {
+	            masterBall = MasterBallSyncManager.Instance.GetMasterGameBall();
+	        }
+	        this.transform.position = Vector3.Lerp(this.transform.position, masterBall.transform.position, 1);
+	        this.transform.rotation = masterBall.transform.rotation;
+	    }
+	    else
+	    {
+	        this.transform.position = Vector3.Lerp(this.transform.position, nextPosition, 0.3f);
+		    this.transform.rotation = Quaternion.Lerp(this.transform.rotation, nextRotation, 0.3f);
+	    }
 	}
 
     //Inform that something collite with the client ball
@@ -55,8 +64,10 @@ public class ClientBallSyncManager : Photon.MonoBehaviour {
         }
         else
         {
-            gameObject.transform.rotation = (Quaternion)stream.ReceiveNext();
-            gameObject.transform.position = (Vector3)stream.ReceiveNext();
+//            gameObject.transform.rotation = (Quaternion)stream.ReceiveNext();
+//            gameObject.transform.position = (Vector3)stream.ReceiveNext();
+            nextRotation = (Quaternion)stream.ReceiveNext();
+            nextPosition = (Vector3)stream.ReceiveNext();
         }
     }
 }
