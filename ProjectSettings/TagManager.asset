@@ -9,6 +9,7 @@ TagManager:
   - Gameball
   - AudienceAudio
   - Ball
+  - BallWall
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - FPSWeapon
   - Gameball
   - Avatar
-  - 
+  - BallWall
   - 
   - 
   - 
