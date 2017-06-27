@@ -23,7 +23,6 @@ namespace VRStandardAssets.Menu
         [SerializeField]
         private VRInteractiveItem m_InteractiveItem;       // The interactive item for where the user should click to load the level.
 
-
         private bool m_GazeOver;                                            // Whether the user is looking at the VRInteractiveItem currently.
 
 
