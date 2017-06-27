@@ -45,4 +45,5 @@ MonoBehaviour:
   - BallWasHitMessage
   - IncreasePlayerPoints
   - StartGame
+  - setGameBall
   DisableAutoOpenWizard: 1
