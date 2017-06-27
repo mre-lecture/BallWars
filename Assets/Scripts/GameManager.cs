@@ -36,8 +36,9 @@ public class GameManager : MonoBehaviour {
 
 	void LateUpdate(){
 		if (IsGameOver ()) {
-			SceneManager.LoadScene ("MenuScene", LoadSceneMode.Single);
-		}
+            PhotonNetwork.LeaveRoom();
+            SceneManager.LoadScene("MenuScene", LoadSceneMode.Single);
+        }
 
 	}
 
